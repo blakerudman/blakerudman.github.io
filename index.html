@@ -6,6 +6,7 @@
   <title>jQuery UI Sortable - Default functionality</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <style>
   #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
   #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
@@ -41,11 +42,23 @@ ul li:hover {
   position: absolute;
   top: 50%;
   right: 0%;
-  padding: 12px 16px;
+  padding: 4px 8px;
   transform: translate(0%, -50%);
 }
 
 .close:hover {background: #bbb;}
+
+.edit {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  padding: 4px 8px;
+  transform: translate(0%, -50%);
+}
+
+.edit:hover {background: #bbb;}
+
   </style>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -59,13 +72,13 @@ ul li:hover {
 <body>
  
 <ul id="sortable">
-  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1<span class="close">&times;</span></li>
-  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2<span class="close">&times;</span></li>
-  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3<span class="close">&times;</span></li>
-  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4<span class="close">&times;</span></li>
-  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5<span class="close">&times;</span></li>
-  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6<span class="close">&times;</span></li>
-  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7<span class="close">&times;</span></li>
+  <li class="ui-state-default">Item 1<span class="edit">&oplus;</span><span class="close">&otimes;</span></li>
+  <li class="ui-state-default">Item 2<span class="edit">&oplus;</span><span class="close">&otimes;</span></li>
+  <li class="ui-state-default">Item 3<span class="edit">&oplus;</span><span class="close">&otimes;</span></li>
+  <li class="ui-state-default">Item 4<span class="edit">&oplus;</span><span class="close">&otimes;</span></li>
+  <li class="ui-state-default">Item 5<span class="edit">&oplus;</span><span class="close">&otimes;</span></li>
+  <li class="ui-state-default">Item 6<span class="edit">&oplus;</span><span class="close">&otimes;</span></li>
+  <li class="ui-state-default">Item 7<span class="edit">&oplus;</span><span class="close">&otimes;</span></li>
 </ul>
   
   <script>
